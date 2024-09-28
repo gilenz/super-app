@@ -17,7 +17,7 @@ pipeline {
         }
         stage('test the application') {
             steps {
-                sh "curl localhost:3000"
+                sh "curl localhost:8080"
             }
         }
         stage('Deploy to docker hub') {
