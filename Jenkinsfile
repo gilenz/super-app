@@ -1,7 +1,9 @@
 pipeline {
-    node { 
-        label 'jenkins-docker-slave'
-}
+    agent {
+        node {
+            label 'jenkins-docker-slave' 
+        }
+    }
     stages {
         stage('build docker compose') {
             steps {
