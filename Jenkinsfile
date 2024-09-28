@@ -1,5 +1,6 @@
 pipeline {
-    node('jenkins-docker-slave') {
+    node { 
+        label 'jenkins-docker-slave'
 }
     stages {
         stage('build docker compose') {
