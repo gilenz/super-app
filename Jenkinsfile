@@ -12,7 +12,7 @@ pipeline {
         }
         stage('start the application') {
             steps {
-                sh "docker compose up"
+                sh "docker compose up -d"
             }
         }
         stage('test the application') {
