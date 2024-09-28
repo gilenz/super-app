@@ -31,5 +31,10 @@ pipeline {
                 }
             }
         }
+        stage('Deploy to docker hub') {
+            steps {
+                sh "docker compose down"
+            }
+        }
     }
 }
